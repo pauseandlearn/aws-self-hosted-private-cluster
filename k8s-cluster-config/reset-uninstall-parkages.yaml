@@ -1,3 +1,10 @@
+- name: Reset Kubernetes on all nodes
+  hosts: all
+  become: yes
+  tasks:
+    - name: Run kubeadm reset
+      command: kubeadm reset -f
+
 - name: Uninstall Kubernetes tools
   hosts: all
   become: yes
