@@ -138,7 +138,7 @@ ansible all -n inventories/hosts.ini -m gather_facts
 ```bash
 ansible all -n inventories/hosts.ini -m gather_facts --limit 172.31.1.202 #maybe control plane
 ```
-**Step 6: Install you cluster**
+**Step 6: Install your cluster**
 - To install k8s cluster with kubeadm, run the following from `k8s-cluster-config` directory
 
 ```bash
