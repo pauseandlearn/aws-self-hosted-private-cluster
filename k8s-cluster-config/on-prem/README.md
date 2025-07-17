@@ -60,7 +60,7 @@ ssh-keygen -t ed25519  -C "for remote configuration"
 - navigate to `.ssh` rename `ed25519` file to `ansible`
 
 **Step 5: Create Common Password**
-While in `k8s-cluste-config` directory, run `./create.sh`
+While in `k8s-cluste-config` directory, run `./03-create-password.sh`
 
 **Step 6: Disbale Password Authentication**
 The file path completely depends on the version of ubuntu you are using. Check if the version of your ubuntu server if `focal` or `jammy`.  You can disable password authentication *manually* or with *shell script* (prefered). 
